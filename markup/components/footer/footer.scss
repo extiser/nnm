@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 5px solid #b4cde6;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  &__item {
+    padding: 0 24px;
+
+    color: #2b4157;
+    border-right: 1px solid #2b4157;
+
+    font-size: 12px;
+    font-weight: bold;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+
+      border-right: 0;
+    }
+  }
+}

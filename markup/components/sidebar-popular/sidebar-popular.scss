@@ -1,0 +1,27 @@
+.sidebar-popular {
+  table {
+    color: #2b4157;
+
+    font-size: 12px;
+    tr {
+      border-bottom: 1px solid #fff;
+      &:nth-child(even) {
+        background-color: #e8eff7;
+      }
+      &:nth-child(odd) {
+        background-color: #f4f8fb;
+      }
+      td {
+        padding: 7px;
+        &:first-child {
+          text-align: center;
+
+          border-right: 1px solid #fff;
+        }
+        a {
+          color: #2b4157;
+        }
+      }
+    }
+  }
+}

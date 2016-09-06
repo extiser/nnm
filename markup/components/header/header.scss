@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+
+  width: 100%;
+  margin-bottom: 20px;
+
+  background-color: $blue;
+
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__logo {
+    display: block;
+
+    @include bg($logo);
+  }
+  &__bottom {
+    display: flex;
+
+    width: 100%;
+
+    background-color: $dark-blue;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-submenu {
+  &__item {
+    padding: 0 20px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-right: 1px solid $blue;
+
+    font-size: 12px;
+    &:last-child {
+      border-right: 0;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.header-search {
+  padding: 5px 0;
+  &__label {
+    display: inline-block;
+
+    margin-right: 15px;
+
+    vertical-align: middle;
+
+    color: #fff;
+
+    font-size: 12px;
+  }
+  &__field {
+    display: inline-block;
+
+    border: 0;
+  }
+  &__submit {
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: #fff;
+    border: 1px solid $blue;
+    background-color: transparent;
+
+    font-size: 12px;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}

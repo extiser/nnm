@@ -1,0 +1,14 @@
+.main-music {
+  &__wrapper {
+    display: flex;
+
+    padding: 15px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .item-block {
+    width: 49.5%;
+    margin-bottom: 12px;
+  }
+}

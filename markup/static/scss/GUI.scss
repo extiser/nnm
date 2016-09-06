@@ -1,0 +1,26 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.title {
+  padding: 10px 15px;
+
+  color: #fff;
+  background: linear-gradient(to bottom, #7eb2ea, #5e85b4);
+  text-shadow: 1px 1px 0 rgba(#000, .5);
+
+  font-size: 18px;
+  font-weight: bold;
+  &._center {
+    text-align: center;
+    text-decoration: underline;;
+  }
+}
+
+.widget {
+  margin-bottom: 20px;
+  padding: 2px;
+
+  border: 1px solid $blue;
+  border-radius: 3px;
+  background-color: #f4f8fb;
+}

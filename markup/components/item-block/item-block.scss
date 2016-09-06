@@ -1,0 +1,158 @@
+.item-block {
+  box-sizing: border-box;
+  padding: 15px;
+
+  border: 1px solid $blue;
+  background-color: #fff;
+  &._vertical {
+    text-align: center;
+  }
+  &._horizontal {
+    display: flex;
+    .item-block__img {
+      img {
+        width: 115px;
+        height: 115px;
+      }
+    }
+    .item-block__content {
+      padding-left: 15px;
+    }
+    .download-btn {
+      margin-left: 0;
+      padding-left: 26px;
+    }
+  }
+  &__link {
+    display: block;
+
+    margin: 12px 0;
+
+    color: #2b4157;
+
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.item-block-meta {
+  display: flex;
+
+  color: #2b4157;
+
+  font-size: 12px;
+
+  justify-content: flex-start;
+  &__comments {
+    position: relative;
+
+    padding-right: 10px;
+    padding-left: 20px;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      display: block;
+
+      content: "";
+
+      @include bg($msg);
+    }
+  }
+  &__size {
+    position: relative;
+
+    padding-right: 10px;
+    padding-left: 24px;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      display: block;
+
+      content: "";
+
+      @include bg($box);
+    }
+  }
+  &__speed {
+    position: relative;
+
+    padding-right: 10px;
+    padding-left: 21px;
+
+    color: #060;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    &:before {
+      position: absolute;
+      left: 10px;
+
+      display: block;
+
+      content: "↑";
+
+      font-size: 10px;
+    }
+  }
+  &__likes {
+    position: relative;
+
+    padding-left: 27px;
+    &:before {
+      position: absolute;
+      top: -3px;
+      left: 8px;
+
+      display: block;
+
+      content: "";
+
+      @include bg($like);
+    }
+    &:after {
+      position: absolute;
+      top: -3px;
+      right: -22px;
+
+      display: block;
+
+      content: "";
+
+      @include bg($dislike);
+    }
+  }
+}
+
+.download-btn {
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 92px;
+  height: 25px;
+  margin: 10px auto;
+  padding-left: 18px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  border-radius: 7px;
+  background: linear-gradient(to bottom, #6196ca, #397bbd);
+
+  font-size: 12px;
+  line-height: 25px;
+  &:hover {
+    background: linear-gradient(to bottom, #397bbd, #6196ca);
+  }
+  &:before {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+
+    content: "";
+
+    @include bg($download);
+  }
+}

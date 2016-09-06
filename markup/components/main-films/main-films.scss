@@ -1,0 +1,15 @@
+.main-films {
+  &__wrapper {
+    display: flex;
+
+    padding: 15px;
+
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .item-block {
+    width: 32%;
+    margin-bottom: 15px;
+  }
+}

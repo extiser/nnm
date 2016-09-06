@@ -1,0 +1,19 @@
+.sidebar-categories {
+  padding-bottom: 15px;
+  .title {
+    margin-bottom: 15px;
+  }
+  &__item {
+    display: block;
+
+    margin-bottom: 4px;
+    padding-left: 10px;
+
+    color: #2b4157;
+
+    font-size: 12px;
+    .fa {
+      margin-right: 5px;
+    }
+  }
+}

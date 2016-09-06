@@ -1,0 +1,13 @@
+mixin item-block(data)
+  - var modiffers = attributes.class || '';
+  .item-block(class="#{modiffers}")
+    .item-block__img
+      img(src="http://placehold.it/140x200")
+    .item-block__content
+      a(href="#" title="").item-block__link Преступник / Criminal (2016) WEB-DL [H.264/1080p-LQ]
+      .item-block-meta
+        .item-block-meta__comments 2
+        .item-block-meta__size 3,93 GB
+        .item-block-meta__speed 82,7 MB/s
+        .item-block-meta__likes 129
+      a(href="#" title="").download-btn Скачать

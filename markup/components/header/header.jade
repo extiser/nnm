@@ -1,0 +1,17 @@
+mixin header(data)
+  .header
+    a(href="#" title="").header__logo
+    +menu
+    .header__bottom
+      .header-submenu
+        a(href="#" title="").header-submenu__item Популярное
+        a(href="#" title="").header-submenu__item Новинки
+        a(href="#" title="").header-submenu__item Сейчас скачивают
+      .header-search
+        form.header-search__form
+          label.header-search__label Поиск
+          input(type="text" value="").header-search__field
+          input(type="submit" value="искать").header-search__submit
+      .header-submenu
+        a(href="#" title="").header-submenu__item Правила сервиса
+        a(href="#" title="").header-submenu__item Спасибо!

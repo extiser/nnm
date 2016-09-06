@@ -1,0 +1,29 @@
+.menu {
+  margin-right: 114px;
+
+  @include bg($menu-bg);
+  &__list {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__item {
+    display: block;
+
+    width: 117px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+
+    font-size: 12px;
+    line-height: 45px;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
