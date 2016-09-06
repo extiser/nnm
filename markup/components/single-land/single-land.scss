@@ -1,0 +1,98 @@
+
+
+.land-list {
+  max-width: 220px;
+  margin-top: 30px;
+  &__item {
+    position: relative;
+
+    margin-bottom: 10px;
+    padding-left: 25px;
+
+    color: #2b4157;
+
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    .fa {
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      color: #3ca119;
+    }
+  }
+}
+
+.land-download {
+  padding: 40px;
+
+  border: 1px solid #c6d9ec;
+  background-color: #fff;
+  &__title {
+    margin-bottom: 30px;
+
+    color: #069;
+
+    font-size: 31px;
+    font-weight: bold;
+  }
+}
+
+.land-download-info {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  &__right {
+    img {
+      display: block;
+
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.land-download-btn {
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 270px;
+  height: 65px;
+  margin: auto;
+  padding-left: 100px;
+
+  color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #6196ca, #3a7cbd);
+
+  font-size: 27px;
+  line-height: 65px;
+  &:hover {
+    text-decoration: none;
+
+    background: linear-gradient(to bottom, #3a7cbd, #6196ca);
+  }
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+
+    content: "";
+  }
+  &._direct {
+    &:before {
+      @include bg($direct-download);
+    }
+  }
+  &._torrent {
+    &:before {
+      @include bg($torrent-download);
+    }
+  }
+}
