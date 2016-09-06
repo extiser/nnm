@@ -1,0 +1,30 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/menu/menu
+  include ../components/sidebar/sidebar
+  include ../components/sidebar-categories/sidebar-categories
+  include ../components/sidebar-popular/sidebar-popular
+  include ../components/sidebar-vk/sidebar-vk
+  include ../components/sidebar-partners/sidebar-partners
+  include ../components/item-block/item-block
+  include ../components/main-films/main-films
+  include ../components/main-music/main-music
+  include ../components/catalog/catalog
+  include ../components/single/single
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    main.main
+      +header
+      .main__title
+        h1 Ace Stream Media Player 3.1.6 (CrossOver) [Ru]
+      +single
+      +footer
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
