@@ -3269,7 +3269,7 @@ blockquote {
 // Var for using custom font
 $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
-.title {
+.title, .registration__title {
   padding: 10px 15px;
   color: #fff;
   background: -webkit-linear-gradient(top, #7eb2ea, #5e85b4);
@@ -3279,7 +3279,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
-.title._center {
+.title._center, ._center.registration__title {
   text-align: center;
   text-decoration: underline;
 }
@@ -3727,6 +3727,81 @@ a:hover {
   text-decoration: underline;
 }
 
+.registration {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #6699cc;
+  border-radius: 3px;
+  background-color: #f4f8fb;
+}
+
+.registration__title {
+  text-align: center;
+}
+
+.registration-form {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 850px;
+  min-height: 304px;
+  margin-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 360px;
+}
+
+.registration-form:before {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 324px;
+  height: 224px;
+  content: "";
+  background: url(../images/content/reg-img.png) no-repeat;
+}
+
+.registration-form__title {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.registration-form__label {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.registration-form__field {
+  width: 300px;
+  height: 33px;
+  border: 1px solid #6e7f90;
+  background: #faffbd;
+}
+
+.registration-form__sublabel {
+  margin-top: 10px;
+  color: #a4a3a3;
+  font-size: 14px;
+}
+
+.registration-form__submit {
+  width: 154px;
+  height: 45px;
+  margin-top: 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(top, #6196ca, #3c7dbe);
+  background: linear-gradient(to bottom, #6196ca, #3c7dbe);
+}
+
+.registration-form__submit:hover {
+  background: -webkit-linear-gradient(top, #3c7dbe, #6196ca);
+  background: linear-gradient(to bottom, #3c7dbe, #6196ca);
+}
+
 .sidebar {
   box-sizing: border-box;
   width: 246px;
@@ -3736,7 +3811,7 @@ a:hover {
   padding-bottom: 15px;
 }
 
-.sidebar-categories .title {
+.sidebar-categories .title, .sidebar-categories .registration__title {
   margin-bottom: 15px;
 }
 
@@ -3752,8 +3827,8 @@ a:hover {
   margin-right: 5px;
 }
 
-.sidebar-vk__widget {
-  margin-top: 5px;
+.sidebar-partners__widget {
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -3785,6 +3860,11 @@ a:hover {
 
 .sidebar-popular table tr td a {
   color: #2b4157;
+}
+
+.sidebar-vk__widget {
+  margin-top: 5px;
+  text-align: center;
 }
 
 .single {
@@ -3963,11 +4043,6 @@ a:hover {
   display: inline-block;
   margin-right: 15px;
   vertical-align: middle;
-}
-
-.sidebar-partners__widget {
-  margin: 20px 0;
-  text-align: center;
 }
 
 .land-list {
