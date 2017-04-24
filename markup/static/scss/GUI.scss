@@ -24,3 +24,44 @@
   border-radius: 3px;
   background-color: #f4f8fb;
 }
+
+.single-likes {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+}
+
+._like {
+  width: 60px;
+  margin-right: 20px;
+  padding: 5px 15px;
+
+  color: #2a753a;
+  border: 1px solid #2a753a;
+  border-radius: 4px;
+  .fa-thumbs-o-up {
+    margin-right: 5px;
+
+    color: #2a753a;
+  }
+}
+
+._dislike {
+  width: 60px;
+  padding: 5px 15px;
+
+  color: #85323a;
+  border: 1px solid #85323a;
+  border-radius: 4px;
+  .fa-thumbs-o-down {
+    margin-right: 5px;
+
+    color: #85323a;
+  }
+}
+
+.vk-comments {
+  width: 100%;
+  float: none;
+}

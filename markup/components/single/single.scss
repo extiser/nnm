@@ -1,5 +1,9 @@
 .single {
   width: 100%;
+  @media screen and (max-width: 960px) {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
 }
 
 .vk-comments {
@@ -9,7 +13,25 @@
 .single-over {
   > table {
     width: 100%;
+    @media screen and (max-width: 960px) {
+      display: block;
+    }
+    tbody {
+      @media screen and (max-width: 960px) {
+        display: block;
+      }
+    }
     tr {
+      @media screen and (max-width: 960px) {
+        display: block;
+      }
+      img {
+        @media screen and (max-width: 960px) {
+          display: block;
+
+          margin: 0 auto 20px;
+        }
+      }
       &:first-child {
         text-align: center;
 
@@ -19,6 +41,9 @@
 
         font-size: 12px;
         font-weight: bold;
+        @media screen and (max-width: 960px) {
+          display: none;
+        }
         td {
           padding: 7px 0;
 
@@ -35,6 +60,9 @@
 
         border: 1px solid #c6d9ec;
         background-color: #f4f8fb;
+        @media screen and (max-width: 960px) {
+          display: block;
+        }
       }
     }
   }
@@ -105,6 +133,11 @@
 
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 960px) {
+    margin-top: 15px;
+
+    justify-content: center;
+  }
 }
 
 .single-top-right {

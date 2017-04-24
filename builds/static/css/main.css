@@ -3292,6 +3292,51 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
   background-color: #f4f8fb;
 }
 
+.single-likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+._like {
+  width: 60px;
+  margin-right: 20px;
+  padding: 5px 15px;
+  color: #2a753a;
+  border: 1px solid #2a753a;
+  border-radius: 4px;
+}
+
+._like .fa-thumbs-o-up {
+  margin-right: 5px;
+  color: #2a753a;
+}
+
+._dislike {
+  width: 60px;
+  padding: 5px 15px;
+  color: #85323a;
+  border: 1px solid #85323a;
+  border-radius: 4px;
+}
+
+._dislike .fa-thumbs-o-down {
+  margin-right: 5px;
+  color: #85323a;
+}
+
+.vk-comments {
+  width: 100%;
+  float: none;
+}
+
 html,
 body {
   height: 100%;
@@ -3302,7 +3347,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1216px;
+  width: 100%;
+  max-width: 1216px;
   margin: auto;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -3315,12 +3361,21 @@ body {
 }
 
 .main__content {
-  width: 956px;
+  width: 100%;
+  max-width: 956px;
 }
 
 .main__title {
   width: 100%;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  .main__title {
+    box-sizing: border-box;
+    padding: 0 15px;
+    text-align: center;
+  }
 }
 
 .main__title h1 {
@@ -3871,12 +3926,44 @@ a:hover {
   width: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  .single {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+
 .vk-comments {
   margin-top: 30px;
 }
 
 .single-over > table {
   width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .single-over > table {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .single-over > table tbody {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .single-over > table tr {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .single-over > table tr img {
+    display: block;
+    margin: 0 auto 20px;
+  }
 }
 
 .single-over > table tr:first-child {
@@ -3887,6 +3974,12 @@ a:hover {
   background: linear-gradient(to bottom, #c6d8ec, #76aae3);
   font-size: 12px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .single-over > table tr:first-child {
+    display: none;
+  }
 }
 
 .single-over > table tr:first-child td {
@@ -3903,6 +3996,12 @@ a:hover {
   vertical-align: top;
   border: 1px solid #c6d9ec;
   background-color: #f4f8fb;
+}
+
+@media screen and (max-width: 960px) {
+  .single-over > table tr td {
+    display: block;
+  }
 }
 
 .single-forum-info {
@@ -3971,6 +4070,15 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+  .single-top {
+    margin-top: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .single-top-right__item {
@@ -4073,11 +4181,24 @@ a:hover {
   background-color: #fff;
 }
 
+@media screen and (max-width: 960px) {
+  .land-download {
+    padding: 20px;
+  }
+}
+
 .land-download__title {
   margin-bottom: 30px;
   color: #069;
   font-size: 31px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .land-download__title {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 .land-download-info {
@@ -4090,6 +4211,12 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+  .land-download-info {
+    display: block;
+  }
 }
 
 .land-download-info__right img {
@@ -4117,6 +4244,14 @@ a:hover {
   line-height: 65px;
 }
 
+@media screen and (max-width: 960px) {
+  .land-download-btn {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 80px;
+  }
+}
+
 .land-download-btn:hover {
   text-decoration: none;
   background: -webkit-linear-gradient(top, #3a7cbd, #6196ca);
@@ -4128,6 +4263,12 @@ a:hover {
   top: 10px;
   left: 45px;
   content: "";
+}
+
+@media screen and (max-width: 960px) {
+  .land-download-btn:before {
+    left: 20px;
+  }
 }
 
 .land-download-btn._direct:before {
